@@ -3,6 +3,7 @@ public class Strings {
 //urls
     public static final String HOME_PAGE_URL = "https://www.reserved.com/rs/sr/";
     public static final String LOGIN_PAGE_URL = "https://www.reserved.com/rs/sr/customer/account/login/#login";
+    public static final String RETURN_PAGE_URL = "https://www.reserved.com/rs/sr/myaccount/return/list/";
 
 //login credentials
 
@@ -13,4 +14,8 @@ public class Strings {
 
     public static final String NAME = "Dragana";
 
+
+//    error messages
+
+    public static final String ERROR = "Nema povraćaja novca";
 }

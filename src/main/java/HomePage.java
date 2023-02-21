@@ -1,8 +1,12 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class HomePage extends BasePage{
 
@@ -15,6 +19,8 @@ public class HomePage extends BasePage{
     @FindBy(xpath = "//div[@data-testid='account-info-logged-true']")
     WebElement draganaAccountButton;
 
+    @FindBy(xpath = "//a[@data-testid='returns']")
+    WebElement mojiPovracajiOption;
 
 
 //constructor
@@ -42,6 +48,23 @@ public class HomePage extends BasePage{
         return name;
     }
 
+    public void clickDraganaAccountButton() {
+        print("clickDraganaAccountButton");
+        assert draganaAccountButton.isDisplayed() : "Account button is not present on page";
+        draganaAccountButton.click();
+    }
+   /* public void chooseMojiPovracajiOption() {
+        hoverOverElement(draganaAccountButton);
+        hoverClickOverElement(mojiPovracajiOption);
+}*/
+
+    public void chooseMojiPovracajiOption ( ) {
 
 
+        Actions action = new Actions( driver );
+        action.moveToElement( draganaAccountButton ).perform( );
+        WebDriverWait wait = new WebDriverWait(driver, 10 );
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@data-testid='returns']"))).click( );
+        mojiPovracajiOption.click( );
+    }
 }
