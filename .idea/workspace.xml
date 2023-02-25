@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03b73598-70e3-47ed-91ac-fcca3b1df34e" name="Changes" comment="Prvi commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReturnPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CheckOutCartTest.java" afterDir="false" />
+    <list default="true" id="03b73598-70e3-47ed-91ac-fcca3b1df34e" name="Changes" comment="Ispravka testa CheckOutCartTest.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReturnPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReturnPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CheckOutCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReturnListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
   <component name="ProjectId" id="2LrdvzxTpA6FHx0tVcSMJEwSzRZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -59,7 +61,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CheckOutCartTest">
+  <component name="RunManager" selected="TestNG.ReturnListTest.CheckReturnList">
     <configuration name="CheckOutCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reserved" />
       <option name="PACKAGE_NAME" value="" />
@@ -94,11 +96,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.loginWithValidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ReturnListTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reserved" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="METHOD_NAME" value="loginWithValidCredentials" />
+      <option name="MAIN_CLASS_NAME" value="ReturnListTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReturnListTest.CheckReturnList" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Reserved" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReturnListTest" />
+      <option name="METHOD_NAME" value="CheckReturnList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -108,10 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ReturnListTest.CheckReturnList" />
+        <item itemvalue="TestNG.ReturnListTest" />
         <item itemvalue="TestNG.CheckOutCartTest" />
         <item itemvalue="TestNG.CheckOutCartTest.CheckOutCart" />
         <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.LoginTest.loginWithValidCredentials" />
       </list>
     </recent_temporary>
   </component>
@@ -138,11 +152,41 @@
       <option name="project" value="LOCAL" />
       <updated>1676798860343</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ispravka testa CheckOutCartTest.java">
+      <created>1677012669160</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677012669160</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prvi commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prvi commit" />
+    <MESSAGE value="Ispravka testa CheckOutCartTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ispravka testa CheckOutCartTest.java" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/HomePage.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

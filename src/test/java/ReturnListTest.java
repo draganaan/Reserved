@@ -1,12 +1,9 @@
-import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class CheckOutCartTest extends BaseTest{
+public class ReturnListTest extends BaseTest{
 
 
     /**
@@ -22,7 +19,7 @@ public class CheckOutCartTest extends BaseTest{
      */
 
     @Test
-    public void CheckOutCart() {
+    public void CheckReturnList() {
         ChromeDriver driver =  new ChromeDriver();
         try {
             HomePage homePage = new HomePage (driver);
@@ -36,21 +33,20 @@ public class CheckOutCartTest extends BaseTest{
             loginPage.clickSignIn();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             homePage.chooseMojiPovracajiOption();
-            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
 
 
             print("Verify that the error message is shown");
             ReturnPage returnPage = new ReturnPage (driver);
-
-            /*String actualText = returnPage.getTexFromErrorMessage();
+            returnPage.scrollToErrorMessage();
+            String actualText = returnPage.getTexFromErrorMessage();
             assert actualText.equals(Strings.ERROR) : "Wrong text. " +
                     "Expected: " + Strings.ERROR + " Actual: " +actualText;
-*/
 
-            returnPage.scrollToBackToHomePage();
-            returnPage.clickBackToHomePage();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//            returnPage.scrollToBackToHomePage();
+            returnPage.clickBackToHome();
+//            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             print("Verify that we are on Home page");
             assert driver.getCurrentUrl().equals(Strings.HOME_PAGE_URL) : "Wrong page. Expected "
                     + Strings.HOME_PAGE_URL + " . Actual " + driver.getCurrentUrl();

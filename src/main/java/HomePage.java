@@ -60,11 +60,10 @@ public class HomePage extends BasePage{
 
     public void chooseMojiPovracajiOption ( ) {
 
-
         Actions action = new Actions( driver );
         action.moveToElement( draganaAccountButton ).perform( );
         WebDriverWait wait = new WebDriverWait(driver, 10 );
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@data-testid='returns']"))).click( );
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@data-testid='returns']")));
         mojiPovracajiOption.click( );
     }
 }

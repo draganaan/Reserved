@@ -17,9 +17,6 @@ public class ReturnPage extends BasePage{
     WebElement errorMessage;
 
     @FindBy(xpath = "//a[@data-testid='cusomer-account-error-link']")
-    WebElement errorLink;
-
-    @FindBy(xpath = "//a[@class='error-message__Link-ygmg60-3 bKRYiV']")
     WebElement backToHomePage;
 
 
@@ -40,20 +37,20 @@ public class ReturnPage extends BasePage{
         return text;
     }
 
-    public void clickErrorLink() {
-        assert errorLink.isDisplayed() : "Error link is not present";
-        errorLink.click();
-    }
-
-    public void clickBackToHomePage() {
-        assert backToHomePage.isDisplayed() : "Back to home page is not present";
-        WebDriverWait wait = new WebDriverWait(driver, 10 );
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@data-testid='cusomer-account-error-link']"))).click( );
+    public void clickBackToHome() {
+        assert backToHomePage.isDisplayed() : "Back to home is not present";
         backToHomePage.click();
     }
 
-    public void scrollToBackToHomePage() {
+    /*public void clickBackToHomePage() {
+        assert backToHomePage.isDisplayed() : "Back to home page is not present";
+      *//*  WebDriverWait wait = new WebDriverWait(driver, 10 );
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@data-testid='cusomer-account-error-link']"))).click( );*//*
+        backToHomePage.click();
+    }*/
+
+    public void scrollToErrorMessage() {
         JavascriptExecutor js = driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", backToHomePage);
+        js.executeScript("arguments[0].scrollIntoView(true);", errorMessage);
     }
 }
