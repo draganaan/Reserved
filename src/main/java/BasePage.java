@@ -1,3 +1,4 @@
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -6,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class BasePage {
@@ -15,8 +17,10 @@ public class BasePage {
     @FindBy(xpath = "//div[@class='action-btn__HorizontalActionButton-zbpc1m-2 dwExhh']")
     WebElement accountButton;
     @FindBy(xpath = "/data-selen=['login-submit']")
-
     WebElement signInButton;
+
+    @FindBy(xpath = "//input[@placeholder='Traži']")
+    WebElement searchField;
 
 
 //    metode nad drajverom
@@ -65,4 +69,27 @@ public class BasePage {
     }
 
 
+   /* public void enterTextIntoSearchField(String text) {
+        print("enterTextIntoSearchField");
+        searchField.sendKeys(text);
+        waitForElement(searchField);
+        searchField.sendKeys(Keys.ENTER);
+    }*/
+
+    public void searchAndSubmit(String text) {
+        print("searchAndSubmit");
+        searchField.click();
+        searchField.sendKeys((text));
+        waitForElement(searchField);
+        searchField.sendKeys(Keys.ENTER);}
+
+    public boolean isArraySortedInAscendingOrder(ArrayList<Float> arrayList) {
+        for(int i = 0; i<arrayList.size()-1; i++) {
+            Float firstItem = arrayList.get(i);
+            Float secondItem = arrayList.get(i+1);
+            if (firstItem>secondItem) {
+                return false;
+            }
+        } return true;
+    }
 }

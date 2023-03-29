@@ -23,6 +23,9 @@ public class HomePage extends BasePage{
     WebElement mojiPovracajiOption;
 
 
+
+
+
 //constructor
 
     public HomePage(ChromeDriver driver) {

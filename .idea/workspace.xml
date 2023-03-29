@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03b73598-70e3-47ed-91ac-fcca3b1df34e" name="Changes" comment="Ispravka testa CheckOutCartTest.java">
+    <list default="true" id="03b73598-70e3-47ed-91ac-fcca3b1df34e" name="Changes" comment="Ispravka test ReturnListTest.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ProductResultsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SortingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReturnPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReturnPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CheckOutCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReturnListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,34 +63,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ReturnListTest.CheckReturnList">
+  <component name="RunManager" selected="TestNG.SortingTest">
     <configuration name="CheckOutCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Reserved" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CheckOutCartTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckOutCartTest.CheckOutCart" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Reserved" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CheckOutCartTest" />
-      <option name="METHOD_NAME" value="CheckOutCart" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Reserved" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -119,13 +98,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortingTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Reserved" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SortingTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortingTest.sortItemsByPriceAscending" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Reserved" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SortingTest" />
+      <option name="METHOD_NAME" value="sortItemsByPriceAscending" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SortingTest" />
+        <item itemvalue="TestNG.SortingTest.sortItemsByPriceAscending" />
         <item itemvalue="TestNG.ReturnListTest.CheckReturnList" />
         <item itemvalue="TestNG.ReturnListTest" />
         <item itemvalue="TestNG.CheckOutCartTest" />
-        <item itemvalue="TestNG.CheckOutCartTest.CheckOutCart" />
-        <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677012669160</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ispravka test ReturnListTest.java">
+      <created>1677363937908</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677363937908</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,15 +185,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prvi commit" />
     <MESSAGE value="Ispravka testa CheckOutCartTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ispravka testa CheckOutCartTest.java" />
+    <MESSAGE value="Ispravka test ReturnListTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ispravka test ReturnListTest.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/HomePage.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/src/test/java/SortingTest.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
